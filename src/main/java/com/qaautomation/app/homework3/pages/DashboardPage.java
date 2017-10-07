@@ -55,7 +55,7 @@ public class DashboardPage {
         WebElement headerElement = driver.findElement(header);
         String headerName = headerElement.getText();
         if(headerName.equals("категории")) {
-            wait.until(ExpectedConditions.visibilityOfElementLocated(header));
+            System.out.println("Category opened successfully");
         } else {
             throw new Exception("Wrong page opened!");
         }
@@ -68,7 +68,7 @@ public class DashboardPage {
         WebElement headerElement = driver.findElement(header);
         String headerName = headerElement.getText();
         if(headerName.equals("Добавить")) {
-            wait.until(ExpectedConditions.visibilityOfElementLocated(header));
+            System.out.println("Add page opened successfully");
         } else {
             throw new Exception("Wrong page opened!");
         }
